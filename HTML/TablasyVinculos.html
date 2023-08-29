@@ -75,6 +75,81 @@
             <br>
             <h2>Vinvulo de descarga</h2>
             <a href="/HTML/assets/manual-de-higiene-bucal.pdf" target="_blank">Descarga este PDF</a> <!--Sirve para tener un link de un docuento descargable en nuestra pagina (documentos se guardan en una carpeta assets)-->
+            <br>
+            <br>
+            <hr>
+            <br>
+            <h1>Formularios</h1>
+            <form action="procesar_formulario" method="post">Formulario Consultorio Dental</form>
+            <!--Se utiliza para crear un formulario en HTMLque permite a los usuarios ingresar y enviar datos-->
+            <br>
+            <h3>Etiqueta Input</h3> <!--Esta etiqueta se utiliza para crear campos de entrada en un formulario-->
+            <input type="text" name="Usuario" placeholder="Usuario">
+            <!--type:define el tipo de entrada (texto,correo,contraseña,etc.)-->
+            <!--name: es el nombre del campo utilizado para identificar el dato cuando se envía nuestro formulario-->
+            <!--placeholder: proporciona un texto ejemplo dentro de nuestro campo de entrada-->
+            <br>
+            <h3>Etiqueta Label</h3> <!--Esta etiqueta se utiliza para etiquetar un elemento de entrada en un formulario, esto mejora la accesibilidad y la experiencia de usuario-->
+            <label for="Usuario"> Usuario</label>
+            <input type="text" id="Usuario" name="Usuario">
+            <br>
+            <br>
+            <h3>Etiqueta Button</h3> <!--Esta etiqueta se utiliza para crear botones en un formulario-->
+            <button type="submit">enviar</button>
+            <button type="reset">Restablecer</button>
+            <!--type: define el tipo de botón (submit, reset, button)-->
+            <!--name: es el nombre del botón, utilizado para identificar el botón cuando se envió el formulario-->
+            <br>
+            <br>
+            <h3>Etiqueta Area de Texto</h3> <!--Se utiliza para crear campos de texto en un formulario-->
+            <textarea name="Comentario" id="Comentario" cols="30" rows="5">Escriba un comentario</textarea>
+            <br>
+            <br>
+            <h3>Etiqueta Select</h3>
+            <br>
+            <br>
+            <hr>
+            <h1>Tipos de Entrada</h1>
+            <!--Los tipos de entrada permiten a los usuarios ingresar diferentez tipos de datos en un formulario-->
+            <h4>Enviar (submit)</h4>
+            <!--Crea un botón que, cuando hace click, envía el formulario a una ubicación específica-->
+            <form action="/procesar_formulario" method="post">
+                <input type="Submit" value="Enviar">
+            </form>
+            <br>
+            <h4>Numero (number)</h4>
+            <!--Este tipo de entrada va a crear un campo de entrada para que el ususario ingrese números-->
+            <input type="number" name="Numero">
+            <br>
+            <h4>Contraseña (password)</h4>
+            <!--Va a crear un campo de entrada para que el usuario ingrese una contraseña-->
+            <input type="password" name="Contraseña">
+            <br>
+            <h4>Correo (email)</h4>
+            <!--Crear un campo de entrada para que el usuario ingrese un correo-->
+            <input type="email" name="Correo">
+            <br>
+            <h4>Fecha (date)</h4>
+            <!-- Nos va a crear un campo de entrada, permite a los usuarios ingresar una fecha-->
+            <input type="date" name="Fecha">
+            <br>
+            <h4>Hora (time)</h4>
+            <!--Crea un campo de entrada que permite al usuario elegir/ingresar una hora-->
+            <input type="time" name="Hora">
+            <br>
+            <h4>Telefono (tel)</h4>
+            <!--Crea un campo de entrada que permite al usuario ingresar un telefono-->
+            <input type="tel" name="Telefono">
+            <br>
+            <!--hay un atributo que permite establecer un mínimo y un máximo tanto para campos del tipo date y number. Tal cual se llama así "min y max", y podemos establecer límites en la fecha que se muestra (por ejemplo min="2003-08-28" max="1924-08-28). Si necesitan validar sólo el número de la edad (>18), si se puede hacer con validaciones de JS-->
+            <br>
+            <h4>Archivo (file)</h4>
+            <!--Crea un campo de entrada que permite al usuario ingresar un archivo-->
+            <input type="file" name="Archivo">
+
+
+
+
 
 </body>
 </html>
